@@ -5,6 +5,9 @@ import { Component } from '@angular/core';
   template: `<div>
     <p>This website uses cookies to provide better user experience</p>
   </div>`,
-  styleUrls: ['./notification.component.css'],
+  styles: [
+    'div{background-color: orange;margin: 10px 0px; padding: 10px 20px; text-align:center;}',
+    'p{font-size: 14px;}',
+  ],
 })
 export class NotificationComponent {}
