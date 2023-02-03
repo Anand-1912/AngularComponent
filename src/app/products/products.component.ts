@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-products',
@@ -57,5 +57,5 @@ export class ProductsComponent {
     },
   ];
 
-  searchedText: string = 'LG';
+  @Input() searchedText: string = '';
 }

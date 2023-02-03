@@ -3,7 +3,12 @@
 </div> -->
 
 <ng-container *ngFor="let p of products; let i = index">
-  <div *ngIf="searchedText === '' || p.name.includes(searchedText)">
+  <div
+    *ngIf="
+      searchedText === '' ||
+      p.name.toUpperCase().includes(searchedText.toUpperCase())
+    "
+  >
     <!-- <p>{{ i }}</p> -->
     <div
       class="product-container"

@@ -5,4 +5,10 @@ import { Component } from '@angular/core';
   templateUrl: './container.component.html',
   styleUrls: ['./container.component.css'],
 })
-export class ContainerComponent {}
+export class ContainerComponent {
+  searchedTextInSearchBox: string = '';
+
+  onSearchTextEnteredInSearchBox(searchValue: string) {
+    this.searchedTextInSearchBox = searchValue;
+  }
+}

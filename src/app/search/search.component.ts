@@ -17,6 +17,6 @@ export class SearchComponent {
 
   OnSearchTextChanged() {
     this.searchTextChanged.emit(this.searchValue);
-    console.log(this.searchValue);
+    //console.log(this.searchValue);
   }
 }
