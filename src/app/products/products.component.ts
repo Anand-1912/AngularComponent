@@ -56,4 +56,6 @@ export class ProductsComponent {
       image: '/assets/products/product-image-6.jpeg',
     },
   ];
+
+  searchedText: string = 'LG';
 }
